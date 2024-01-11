@@ -10,5 +10,5 @@ CREATE TABLE public.house_prices (
     Area_in_Marla FLOAT
 );
 
-\COPY public.house_prices (property_type, price, location, city, baths, purpose, bedrooms, Area_in_Marla)
+\COPY public.house_prices (id, property_type, price, location, city, baths, purpose, bedrooms, Area_in_Marla)
 FROM '/tmp/house_prices.csv' DELIMITER ',' CSV HEADER;
